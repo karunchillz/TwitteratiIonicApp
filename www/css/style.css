@@ -1,0 +1,128 @@
+ion-content {
+    margin-bottom: 50px !important;
+}
+
+.no-border {
+    border: none;
+}
+
+.user {
+    font-weight: bold;
+}
+
+.current-user {
+    float: left;
+    clear: both;
+}
+
+.not-current-user {
+    float: right;
+    clear: both;
+}
+
+.current-user .details {
+    background-color: #72CBFF;
+}
+
+.not-current-user .details {
+    background-color: #DCDCDC;
+}/* Empty. Add your own CSS if you like */
+
+
+.custom-background-image{
+	background: url('../img/background.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+
+.login .main-header{
+	top: 280px;
+    position: absolute;
+    /* left: 50px; */
+    font-size: 26px;
+    padding: 20px;
+    color: white;
+    font-family: Comic Sans-serif;
+    font-weight: bold;
+}
+
+.login .start-button{
+	position: absolute;
+    top: 398px;
+    width: 150px;
+    left: 107px;
+}
+
+.login .start-button button{
+	font-size: 30px;
+}
+
+.fields .field-content .welcome-text{
+	padding-left: 70px;
+    font-size: 35px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.fields .field-content .profile-image{
+    border-radius: 50%;
+    width: 125px;
+    height: 125px;
+    border: 3px solid #11c1f3;
+    position: relative;
+    left: 105px;
+}
+
+.room .background-card-1{
+	background: url('../img/profile-back-1.jpg');
+    background-size: 400px 300px;
+    background-repeat: no-repeat;
+	height: 280px;
+}
+
+.room .background-card-2{
+	background: url('../img/profile-back-2.jpg');
+    background-size: 400px 300px;
+    background-repeat: no-repeat;
+	height: 280px;
+}
+
+.room .profile-image{
+	border-radius: 50%;
+	width: 150px;
+    height: 150px;
+    border: 3px solid #11c1f3;
+    position: relative;
+    left: 30px;
+    top: 30px;
+}
+
+.player .main-header{
+	font-size: 30px;
+    color: white;
+    padding: 10px;
+    border-left:30px;
+    padding-left: 75px;
+}
+
+.game .game-content{
+	top: 15%;
+    font-size: 25px;
+    padding: 10px;	
+}
+
+.game .game-heading{
+	font-size: 30px;
+    padding-bottom: 30px;
+    color: blue;
+}
+
+.game .game-value {
+    padding: 20px;
+}
+
+.game .game-content .game-winner, .game .game-content .match-winner{
+	padding: 20px;
+    color: green;	
+}

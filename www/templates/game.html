@@ -1,0 +1,79 @@
+<ion-view title="Room" ng-controller="GameController as game_ctrl" class="game custom-background-image">      
+	<ion-content scroll="false" class="game-content">
+ 		<div class = "row game-heading">
+ 			<div class = "col text-center">
+              {{game_ctrl.current_user}}
+              <div class="game-winner" ng-if="game_ctrl.grand_winner == game_ctrl.current_user">WINNER</div>
+            </div>
+  			<div class = "col text-center">
+              {{game_ctrl.timer_time}} s
+            </div>
+ 			<div class = "col text-center">
+              {{game_ctrl.opponent_user}}
+              <div class="game-winner"ng-if="game_ctrl.grand_winner == game_ctrl.opponent_user">WINNER</div>
+            </div>                       
+        </div>
+ 
+		<div class = "row game-value">
+ 			<div class = "col text-center">
+              {{game_ctrl.current_user_score[0].key}}
+              <div class="match-winner" ng-if="game_ctrl.winner_selection[0] == 0">Won</div>
+            </div>
+  			<div class = "col text-center">
+              {{game_ctrl.current_user_score[0].value}}
+            </div>
+ 			<div class = "col text-center">
+              -
+            </div>              
+ 			<div class = "col text-center">
+              {{game_ctrl.opponent_user_score[0].value}}
+            </div>               
+			<div class = "col text-center">
+              {{game_ctrl.opponent_user_score[0].key}}
+              <div class="match-winner" ng-if="game_ctrl.winner_selection[0] == 1">Won</div>
+            </div>
+        </div>
+ 
+ 
+		<div class = "row game-value">
+ 			<div class = "col text-center">
+              {{game_ctrl.current_user_score[1].key}}
+              <div class="match-winner" ng-if="game_ctrl.winner_selection[1] == 0">Won</div>
+            </div>
+  			<div class = "col text-center">
+              {{game_ctrl.current_user_score[1].value}}
+            </div>
+ 			<div class = "col text-center">
+              -
+            </div>              
+ 			<div class = "col text-center">
+              {{game_ctrl.opponent_user_score[1].value}}
+            </div>               
+			<div class = "col text-center">
+              {{game_ctrl.opponent_user_score[1].key}}
+              <div class="match-winner" ng-if="game_ctrl.winner_selection[1] == 1">Won</div>
+            </div>
+        </div>
+ 
+ 
+		<div class = "row game-value">
+ 			<div class = "col text-center">
+              {{game_ctrl.current_user_score[2].key}}
+              <div class="match-winner" ng-if="game_ctrl.winner_selection[2] == 0">Won</div>
+            </div>
+  			<div class = "col text-center">
+              {{game_ctrl.current_user_score[2].value}}
+            </div>
+ 			<div class = "col text-center">
+              -
+            </div>              
+ 			<div class = "col text-center">
+              {{game_ctrl.opponent_user_score[2].value}}
+            </div>               
+			<div class = "col text-center">
+              {{game_ctrl.opponent_user_score[2].key}}
+              <div class="match-winner" ng-if="game_ctrl.winner_selection[2] == 1">Won</div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

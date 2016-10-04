@@ -1,0 +1,25 @@
+<ion-view title="Room" ng-controller="HomeController as home_ctrl" class="room custom-background-image">
+  <ion-content class="has-header padding">
+
+    <div class="background-card-1" ng-if="home_ctrl.current_user">
+        <div class="profile-image" ng-style="{'background-image':'url({{home_ctrl.current_user_image}})'}"></div>
+        <div class="profile-name">
+          {{home_ctrl.current_user}}
+        </div>
+    </div>
+
+    <div class="background-card-2" ng-if="home_ctrl.opponent_user == 'n'">
+        <div class="profile-image" style="background-image:url('../img/no-profile.jpeg');">
+          &nbsp;
+        </div>
+    </div>
+
+    <div class="background-card-2" ng-if="home_ctrl.opponent_user != 'n'">
+        <div class="profile-image" ng-style="{'background-image':'url({{home_ctrl.opponent_user_image}})'}"></div>
+        <div class="profile-name">
+          {{home_ctrl.opponent_user}}
+        </div>
+    </div>  
+
+  </ion-content>
+</ion-view>

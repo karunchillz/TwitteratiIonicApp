@@ -1,0 +1,12 @@
+<ion-view title="Rooms" ng-controller="GameController as game_ctrl" class="player custom-background-image">
+  <ion-content class="has-header padding" ng-init="loadImages()">
+        <div class="main-header">Select 3 players !</div>
+        <div class="list listbox">
+            <div class="item" ng-repeat="image in images" ng-click="clicked(image)" ng-class="{ active: image.selected }">
+                <div class="player-pic"><img ng-src="{{image.src}}" width="30%" /><img src="img/power-details.png" width="70%" /></div>
+                <div class="player-name">{{ image.name }}</div>
+            </div>
+        </div>
+    </div>
+  </ion-content>
+</ion-view>

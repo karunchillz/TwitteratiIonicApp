@@ -1,0 +1,15 @@
+<ion-view title="Rooms" ng-controller="HomeController as home_ctrl" class="fields custom-background-image">
+
+  <ion-content class="has-header padding field-content">
+  	<div class="profile-image" ng-style="{'background-image':'url({{home_ctrl.current_user_image}})'}"></div>
+  	<div class="welcome-text">
+  		Select a game !
+  	</div>
+    <div class="card" ng-repeat="room in home_ctrl.rooms">
+      <div class="item item-text-wrap text-center" ng-click="enterRoom(room)">
+        <strong>{{room}}</strong>
+      </div>
+    </div>
+  </ion-content>
+
+</ion-view>
