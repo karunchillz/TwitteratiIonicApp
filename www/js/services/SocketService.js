@@ -6,7 +6,7 @@
 	function SocketService(socketFactory){
 		return socketFactory({
 			
-			ioSocket: io.connect('https://testing-socket-io.herokuapp.com/')
+			ioSocket: io.connect('https://localhost/')
 
 		});
 	}
